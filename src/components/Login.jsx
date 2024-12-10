@@ -4,7 +4,7 @@ export const Login = () => {
   return (
     <form>
       <div className="mb-3 mt-5 container d-flex flex-column justify-content-center align-items-center">
-        <div className="username p-2 w-25">
+        <div className="username">
           <label for="userNameInput" className="form-label">
             Username
           </label>
@@ -15,7 +15,7 @@ export const Login = () => {
             aria-describedby="emailHelp"
           />
         </div>
-        <div className="password p-2  w-25">
+        <div className="password p-2">
           <label for="inputPassword" className="form-label">
             Password
           </label>

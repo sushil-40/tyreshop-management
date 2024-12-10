@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 48px;
+
+  text-shadow: 5px 4px 4px #0e0ae4d2;
+
+  color: rgb(252, 245, 245);
+  background: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.hr-line {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* homepage container  */
+.homepage-container {
+  display: flex; /* Enables Flexbox */
+  flex-direction: row; /* Ensures row layout */
+  flex-wrap: nowrap;
+  justify-content: flex-start; /* Space between items */
+  align-items: center; /* Aligns items vertically */
+  min-height: 80vh; /* Optional: Adjust height to viewport */
+  /* gap: 2px; */
+  padding: 0;
+  position: relative;
+  /* overflow: hidden; */
+  background: url("./assets/b.jpg") no-repeat;
+  background-size: cover;
+}
+
+.left-container,
+.right-container {
+  /* Optional: Visualize the containers */
+  padding: 10px; /* Optional: Add some padding */
+  height: 500px;
+  border-radius: 20px;
+}
+.left-container {
+  /* background-image: url("./assets/shop.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  height: 300px;
+  width: 300px;
+  border: 1 px solid gray;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 4px 4px 4px black;
+  backdrop-filter: blur(10px);
+  opacity: 0.9;
+}
+
+/* bouncing-tyre  */
+
+.bouncing-tyre {
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+  background: url("./assets/speed.png");
+  background-size: cover;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.right-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Keyframes for spinning motion */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Complete one full rotation */
+  }
+}
