@@ -1,8 +1,18 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  position: relative;
+
+  width: 100%;
+  margin: 5px;
+  height: 90vh;
 }
 
 .title {
+  width: 100%;
   font-size: 48px;
 
   text-shadow: 5px 4px 4px #0e0ae4d2;
@@ -14,19 +24,22 @@
 
 .hr-line {
   border: 1px solid rgb(0, 0, 0);
+  width: 100%;
 }
 
 /* homepage container  */
 .homepage-container {
+  width: 100%;
   display: flex; /* Enables Flexbox */
   flex-direction: row; /* Ensures row layout */
   flex-wrap: nowrap;
   justify-content: flex-start; /* Space between items */
   align-items: center; /* Aligns items vertically */
-  min-height: 80vh; /* Optional: Adjust height to viewport */
+  min-height: 70vh;
+
   /* gap: 2px; */
   padding: 0;
-  position: relative;
+
   /* overflow: hidden; */
   background: url("./assets/b.jpg") no-repeat;
   background-size: cover;
@@ -53,7 +66,7 @@
   border: 1 px solid gray;
   border-radius: 20px;
   color: white;
-  box-shadow: 4px 4px 4px black;
+  box-shadow: 4px 4px 4px rgb(44, 43, 43);
   backdrop-filter: blur(10px);
   opacity: 0.9;
 }
@@ -83,4 +96,19 @@
   100% {
     transform: rotate(360deg); /* Complete one full rotation */
   }
+}
+.footer-section {
+  width: 100%;
+  margin: 0;
+  padding: 0 15px; /* Match Bootstrap's container padding */
+  background: black;
+  color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -90px;
+  opacity: 0.8;
+  overflow: hidden;
 }
