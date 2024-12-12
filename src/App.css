@@ -4,10 +4,11 @@
   padding: 0;
 }
 .wrapper {
+  margin: 0 atuo;
   position: relative;
 
-  width: 100%;
-  margin: 5px;
+  width: 98%;
+
   height: 90vh;
 }
 
@@ -58,10 +59,10 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .login {
-  height: 300px;
+  height: 380px;
   width: 300px;
   border: 1 px solid gray;
   border-radius: 20px;
@@ -71,6 +72,10 @@
   opacity: 0.9;
 }
 
+.login-btn:hover {
+  background: linear-gradient(green, blue);
+  transform: scale(1.2);
+}
 /* bouncing-tyre  */
 
 .bouncing-tyre {
@@ -86,6 +91,7 @@
 .right-container {
   position: relative;
   overflow: hidden;
+  z-index: 12;
 }
 
 /* Keyframes for spinning motion */
@@ -111,4 +117,84 @@
   top: -90px;
   opacity: 0.8;
   overflow: hidden;
+}
+
+a {
+  color: rgb(233 242 255);
+  text-decoration: underline;
+}
+
+/* sign up Component  */
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sign-up-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #080808;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.sign-up-btn {
+  width: 100%;
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.sign-up-btn:hover {
+  background: linear-gradient(rgb(18, 219, 69), rgb(75, 75, 219));
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.reset-password {
+  font-size: 14px;
+}
+.signup-link {
+  font-size: 14px;
 }
